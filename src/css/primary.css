@@ -1,0 +1,11 @@
+.primary{
+  color: #fff;
+}
+.floating-box {
+    display: inline-block;
+    margin: 8px;
+}
+.center{
+  float: none;
+  margin: 0 auto;
+}
