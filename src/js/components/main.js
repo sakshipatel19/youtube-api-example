@@ -1,15 +1,13 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from './home'
-import DataFilter from './datafilter'
-import MoviePortal from './movieportal'
+import Home from '../containers/home'
+import Video from '../components/video'
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/datafilter' component={DataFilter}/>
-      <Route path='/movieportal' component={MoviePortal}/>
+      <Route path='/video' component={Video} />
     </Switch>
   </main>
 )
