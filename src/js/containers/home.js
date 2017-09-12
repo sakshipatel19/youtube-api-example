@@ -31,14 +31,14 @@ class Home extends React.Component {
             </div>
           </form>
         </div>
-        {this.state.whichView === 'HOME' ? <DefaultVideos defaultVideos={this.props.defaultvideos} /> : <VideosList />}
+        {this.state.whichView === 'HOME' ? <DefaultVideos defaultVideos={this.props.defaultvideos} /> : <VideosList searchTerm={this.refs.search.value.trim()} videolist={this.props.videoList}/>}
       </div>
     )
   }
 
   handleQuery(event){
     event.preventDefault();
-    this.props.fetchVideosList(this.refs.search.value.trim());
+    this.props.fetchVideosList(this.refs.search.value.trim(),'');
     this.setState({
       whichView: 'SEARCH'
     })

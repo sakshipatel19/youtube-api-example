@@ -8,8 +8,7 @@ const DefaultVideos = ({ defaultVideos }) => (
                <iframe width="300" height="200" src={link} frameBorder="0" allowFullScreen></iframe>
              </div>
       })
-   }
+    }
   </div>
 )
-
-export default DefaultVideos
+export default DefaultVideos;
