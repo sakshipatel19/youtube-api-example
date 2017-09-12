@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Navbar, Nav,Button}  from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-<<<<<<< HEAD
 
 const Header = () => (
-=======
-const Header = () =>(
->>>>>>> 2b3cc4eb6b8f58f29f80708ff8efa535f48326f1
    <Nav className="navbar navbar-inverse">
      <div className="container-fluid">
        <div className="navbar-header">
